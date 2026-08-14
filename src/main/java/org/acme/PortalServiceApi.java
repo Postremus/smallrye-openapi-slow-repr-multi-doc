@@ -625,7 +625,7 @@ public class PortalServiceApi {
     }
 
     @POST
-    @Path("/v3/contexts/{id}/favourite")
+    @Path("/v3/contexts/applications/{id}/favourite")
     @Produces({ "application/json" })
     public RestResponse<ContextApplicationDataV3> contextApplicationResourceV3ToggleFavourite(
             @PathParam("id") @Pattern(regexp = "[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}") UUID id) {
