@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <quarkus.platform.version>3.39.1</quarkus.platform.version>
+        <quarkus.platform.version>999-SNAPSHOT</quarkus.platform.version>
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.5.4</surefire-plugin.version>
     </properties>
@@ -37,7 +37,41 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jackson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-openapi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-open-api-core</artifactId>
+            <version>4.4.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-open-api-jaxrs</artifactId>
+            <version>4.4.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-open-api-spring</artifactId>
+            <version>4.4.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>tools.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>3.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-open-api-vertx</artifactId>
+            <version>4.4.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.smallrye</groupId>
+            <artifactId>smallrye-open-api-ui</artifactId>
+            <version>4.4.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
